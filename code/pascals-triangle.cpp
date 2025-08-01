@@ -9,7 +9,7 @@ public:
         vector<vector<int>> store(n);
         for (int i = 0; i < n; i++)
         {
-            store[i] = vector<int>(i + 1, 1);
+            store[i] = vector<int>(i + 1, 1); // each row contains a array with size i+1 always
             for (int j = 1; j < i; j++)
             {
                 store[i][j] = store[i - 1][j] + store[i - 1][j - 1];
