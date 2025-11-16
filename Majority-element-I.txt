@@ -42,6 +42,7 @@ public:
             if (it.second > floor(arr.size() / 2))
             {
                 res = it.first;
+                break;
             }
         }
 

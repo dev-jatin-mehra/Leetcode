@@ -89,3 +89,10 @@ public:
         return or_store.size();
     }
 };
+
+Test Case : 
+arr = [1,2,4] = [1],[2],[4],[1,2],[2,4],[1,2,4] {subarrays}
+
+1. curr = {1}           prev_or_store = {1}         or_store = {1}
+2. curr = {2,3}         prev_or_store = {2,3}       or_store = {1,2,3}
+3. curr = {4,6,7}       prev_or_store = {4,6,7}     or_store = {1,2,3,4,6,7} FinalAns

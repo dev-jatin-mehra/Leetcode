@@ -91,3 +91,22 @@ int main()
 
     return 0;
 }
+
+/*
+Test case :
+nums = [2,3,-2,4]
+maxProd = INT_MIN
+prefix = 1
+0. prefix * 2  = 2  prefix = 2  maxProd = 2
+1. prefix * 3 = 6   prefix = 6  maxProd = 6 FInal Answer
+2. prefix * -2 = -12 ans all other negatives
+
+Test Case :
+nums = [-2,0,-1]
+maxProd = INT_MIN
+prefix = 1
+
+0. prefix * -2 = -2     prefix = -2     maxProd = -2
+1. prefix * 0 = 0       prefix = 0      maxProd = 0
+3. prefix * -1 = 0      prefix = 0      maxProd = 0 Final Ans
+*/
