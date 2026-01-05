@@ -9,14 +9,16 @@ class Solution
 public:
     int countSub(int n, string str)
     {
-        int count = 0;
-        for (int i = 0; i <= str.length() - n; i++)
-        {
-            string substring = str.substr(i, n);
-            if (substring.length() == n)
-                count++;
-        }
-        return count;
+        // int count = 0; // naive
+        // for (int i = 0; i <= str.length() - n; i++)
+        // {
+        //     string substring = str.substr(i, n);
+        //     if (substring.length() == n)
+        //         count++;
+        // }
+        // return count;
+
+        return str.length() - n + 1;
     }
 };
 
