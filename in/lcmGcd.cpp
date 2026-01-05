@@ -33,19 +33,11 @@ int main()
 
     cout << "tlcm: " << tlcm << endl;
 
-    // keep only numbers that are in lcm : needed when given a target lcm 
-    // vector<int> valid;
-    // for (int i = 0; i < n; i++)
-    // {
-    //     if (tlcm % larr[i] == 0)
-    //         valid.push_back(larr[i]);
-    // }
-
     for (int it : larr)
         cout << it << " ";
     cout << endl;
 
-    // greedy appch.
+    // appch.
 
     sort(valid.rbegin(), valid.rend());
 
